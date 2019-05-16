@@ -1,7 +1,9 @@
+
 #ifndef _LLIST_H_
 #define _LLIST_H_
 
-struct llist {
+struct llist
+{
 	struct llist_node *head;
 	int count;
 };
@@ -20,4 +22,3 @@ extern void **llist_array_get(struct llist *llist);
 extern void llist_array_free(void **a);
 
 #endif
-
